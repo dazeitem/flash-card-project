@@ -66,15 +66,15 @@ canvas = Canvas(width=800, height=526, highlightthickness=0, bg=BACKGROUND_COLOR
 current_card = canvas.create_image(400, 263, image=card_front)
 canvas.grid(column=0, row=0, columnspan=3, rowspan=2, padx=50, pady=(20, 0))
 
+# Labels
 lang_label = Label(font=("Arial", 25, "italic"), bg="white", fg="black")
 lang_label.grid(column=0, row=0, columnspan=3, pady=(100, 10))
-
 word_label = Label(font=("Arial", 40, "bold"), bg="white", fg="black")
 word_label.grid(column=0, row=1, columnspan=3, pady=(10, 200))
 
+# Buttons
 wrong_mark = Button(image=wrong, command=turn_card, borderwidth=0, highlightthickness=0)
 wrong_mark.grid(column=0, row=2, pady=(0, 20))
-
 right_mark = Button(image=right, command=got_correct, borderwidth=0, highlightthickness=0)
 right_mark.grid(column=2, row=2, pady=(0, 20))
 
